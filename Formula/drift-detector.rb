@@ -7,8 +7,8 @@ class DriftDetector < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/yellowstonesoftware/drift-detector/releases/download/v0.0.2/drift_detector_macos_arm64-v0.0.2.zip" 
-      sha256 "12d2a42588a4365b4dfce1449564f77f6dafde914a165cb69866695354de14c3" 
+      url "https://github.com/yellowstonesoftware/drift-detector/releases/download/v0.0.2/drift_detector_macos_arm64-v0.0.2.zip"
+      sha256 "12d2a42588a4365b4dfce1449564f77f6dafde914a165cb69866695354de14c3"
     end
   end
 
@@ -18,7 +18,7 @@ class DriftDetector < Formula
   end
 
   def install
-    bin.install "drift_detector" 
+    bin.install "drift_detector"
   end
 
   test do
