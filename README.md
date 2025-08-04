@@ -1,0 +1,18 @@
+# Yellowstonesoftware Tools
+
+## How do I install these formulae?
+
+`brew install yellowstonesoftware/tools/<formula>`
+
+Or `brew tap yellowstonesoftware/tools` and then `brew install <formula>`.
+
+Or, in a `brew bundle` `Brewfile`:
+
+```ruby
+tap "yellowstonesoftware/tools"
+brew "<formula>"
+```
+
+## Documentation
+
+`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
