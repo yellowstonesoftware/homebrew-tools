@@ -13,8 +13,12 @@ class DriftDetector < Formula
   end
 
   on_linux do
-    url "https://github.com/yellowstonesoftware/drift-detector/releases/download/v0.0.2/drift_detector_linux-v0.0.2.zip"
-    sha256 "bd642f1ab2a5e1164023130e5c9833458db560ca870a64a5129c4f6ebc41d99f"
+    on_intel do
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/yellowstonesoftware/drift-detector/releases/download/v0.0.2/drift_detector_linux-v0.0.2.zip"
+        sha256 "bd642f1ab2a5e1164023130e5c9833458db560ca870a64a5129c4f6ebc41d99f"
+      end
+    end
   end
 
   def install
