@@ -1,22 +1,22 @@
 class DriftDetector < Formula
   desc "CLI tool to show drift between K8s and GitHub releases/tags"
   homepage "https://github.com/yellowstonesoftware/drift-detector"
-  url "https://github.com/yellowstonesoftware/drift-detector/archive/refs/tags/v0.0.4.tar.gz"
-  sha256 "32cac041b5f1d2484919a89daa124a97ebf92bd2ae8d829c332de86fb7c105b0"
+  url "https://github.com/yellowstonesoftware/drift-detector/archive/refs/tags/v0.0.5.tar.gz"
+  sha256 "1fa6bbb34be2ca4e3054f9389c7e6b5e9313ed8eacea2530e04a40d716c346e0"
   license "GPL-3.0-or-later"
 
   on_macos do
     on_arm do
-      url "https://github.com/yellowstonesoftware/drift-detector/releases/download/v0.0.4/drift_detector_macos_arm64-v0.0.4.zip"
-      sha256 "86b3f7e318a27b7b6d7c2d4014c9a92c556f262abe2b23862c0240d8fb3ea60c"
+      url "https://github.com/yellowstonesoftware/drift-detector/releases/download/v0.0.5/drift_detector_macos_arm64-v0.0.5.zip"
+      sha256 "c6f918c813294ea28f73dda7bc0cdba8f932106ec00b86603cbc7e28a5b6a2d4"
     end
   end
 
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/yellowstonesoftware/drift-detector/releases/download/v0.0.4/drift_detector_linux-v0.0.4.zip"
-        sha256 "70ac625c6ef544fc4d497b6eb396eeeda3df0d82ace3216486849e084f096c48"
+        url "https://github.com/yellowstonesoftware/drift-detector/releases/download/v0.0.5/drift_detector_linux-v0.0.5.zip"
+        sha256 "850a6463f847dbbf0e22cea87861ffb3b31bf46d63a399373a1ec052952b29eb"
       end
     end
   end
